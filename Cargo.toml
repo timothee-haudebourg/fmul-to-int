@@ -1,0 +1,20 @@
+[package]
+name = "fmul-to-int"
+version = "1.0.0"
+edition = "2021"
+authors = ["Timothée Haudebourg <timothee@haudebourg.net>"]
+categories = ["algorithms", "mathematics", "no-std"]
+keywords = ["float", "f32", "f64", "multiplication", "integer"]
+description = "Float multiplication to integer part."
+repository = "https://github.com/timothee-haudebourg/fmul-to-int"
+documentation = "https://docs.rs/fmul-to-int"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+
+[features]
+default = ["std"]
+
+## `std` module support.
+## 
+## Enable so that the `Overflow` error implements `std::error::Error`.
+std = []
